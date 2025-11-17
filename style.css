@@ -33,24 +33,38 @@ body {
 .logo-box {
     display: flex;
     align-items: center;
-}
-
+ } 
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 20px;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-    transition: .3s;
 }
 
-.nav-links a:hover {
-    color: #ffdd57;
+.nav-btn {
+    padding: 10px 22px;
+    font-size: 18px;
+    border-radius: 30px;
+    border: 2px solid #38fd9a;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Hover glow */
+.nav-btn:hover {
+    background: #38fdd9;
+    color: #000;
+    transform: scale(1.1);
+    box-shadow:
+        0 0 10px #38fd9a,
+        0 0 20px #38fd9a,
+        0 0 30px #38fd9a;
 }
 
 /* Hero section */
