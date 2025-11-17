@@ -32,7 +32,7 @@ body {
 
 .logo-box {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
 }
 
 
@@ -92,4 +92,3 @@ body {
     transform: scale(1.05);
     background: #ffe680;
 }
-
