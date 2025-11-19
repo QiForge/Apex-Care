@@ -12,7 +12,7 @@ body {
 
 /* Navbar */
 .navbar {
-    height: 90px;
+    height: 120px;
     width: 100%;
     padding: 20px 50px;
     display: flex;
@@ -92,28 +92,26 @@ body {
     padding: 5px 10px;
 }
 
-/* Hero Section FIXED */
+/* Hero Section */
 .hero {
-    width: 100%;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;       /* FIX */
-    padding-top: 150px;        /* FIX */
-    padding-bottom: 100px;
-    min-height: 100vh;         /* FIX */
+    align-items: center;
+    padding-top: 140px;
 }
 
-/* Features Box FIXED */
+/* Features Box */
 .features-box {
     width: 70%;
     max-width: 900px;
     padding: 40px;
-    background: rgba(255, 255, 255, 0.08);
+    margin: auto;
+    background: rgba(255, 255, 255, 0.06);
     border: 2px solid #38fd9a;
     border-radius: 20px;
-    box-shadow: 0 0 20px #38fd9a, 
-                0 0 40px #38fd9a;
-    backdrop-filter: blur(15px);
+    box-shadow: 0 0 20px #38fd9a, 0 0 40px #38fd9a;
+    backdrop-filter: blur(10px);
     text-align: center;
 }
 
