@@ -67,7 +67,7 @@ body {
 .search-box {
     display: flex;
     align-items: center;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(0, 0, 0, 0);
     border: 2px solid #38fd9a;
     border-radius: 30px;
     padding: 5px 12px;
@@ -91,7 +91,9 @@ body {
     color: #38fd9a;
     padding: 5px 10px;
 }
-
+.search-box input::placeholder {
+    color: #ffffff;
+}
 /* Hero Section */
 .hero {
     min-height: 100vh;

@@ -70,7 +70,7 @@ body {
 .search-box {
     display: flex;
     align-items: center;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(0, 0, 0, 0.05);
     border: 2px solid #38fd9a;
     border-radius: 30px;
     padding: 5px 12px;
@@ -90,7 +90,7 @@ body {
 
 /* Placeholder color */
 .search-box input::placeholder {
-    color: #b4ffd9;
+    color: #ffffff;
 }
 
 /* Button */
