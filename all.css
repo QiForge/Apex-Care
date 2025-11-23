@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1f1c2c, #74b4e2);
+    color: #fff;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 140px; /* height of navbar */
+}
+
+/* -------------------- NAVBAR -------------------- */
+.navbar {
+    height: 120px;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.logo {
+    width: 100px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-btn {
+    padding: 10px 22px;
+    font-size: 18px;
+    border-radius: 30px;
+    border: 2px solid #66baff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Hover glow */
+.nav-btn:hover {
+    background: #97c1f4;
+    color: #000;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #97c1f4, 0 0 20px #97c1f4, 0 0 30px #97c1f4;
+}
+
+/* -------------------- SEARCH BAR -------------------- */
+.search-box {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.08);
+    border: 2px solid #97c1f4;
+    border-radius: 30px;
+    padding: 5px 12px;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.search-box input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #97c1f4;
+    font-size: 16px;
+    width: 160px;
+}
+
+.search-box input::placeholder {
+    color: #ffffffaf;
+}
+
+.search-box button {
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #97c1f4;
+    padding: 5px 10px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.search-box:hover {
+    box-shadow: 0 0 10px #97c1f4, 0 0 20px #97c1f4;
+}
+
+.search-box button:hover {
+    color: #000;
+    background: #97c1f4;
+    box-shadow: 0 0 10px #97c1f4, 0 0 20px #97c1f4;
+}
+
+/* -------------------- TOP SECTION -------------------- */
+.top-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 160px 40px 40px;
+    text-align: center;
+}
+
+.top-text h1 {
+    font-size: 48px;
+    color: #97c1f4;
+    margin-bottom: 20px;
+}
+
+.top-text h2 {
+    max-width: 1100px;
+    line-height: 1.6;
+    font-size: 28px;
+    color: #eafff6;
+}
+
+/* -------------------- MAIN GRID -------------------- */
+.section-grid {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+/* Responsive grid for tablets */
+@media (max-width: 1024px) {
+    .section-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+/* Responsive grid for mobile */
+@media (max-width: 768px) {
+    .section-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 20px 10px;
+    }
+}
+
+/* -------------------- FEATURE BOX -------------------- */
+.features-box {
+    width: 100%;
+    padding: 35px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 2px solid #97c1f4;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #97c1f4, 0 0 40px #97c1f4;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.features-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px #97c1f4, 0 0 50px #97c1f4;
+}
+
+.features-box h2 {
+    font-size: 32px;
+    color: #97c1f4;
+    margin-bottom: 25px;
+}
+
+.features-box h3 {
+    color: #97c1f4;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.features-box p, 
+.features-box ul {
+    font-size: 18px;
+    color: #eafff6;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.features-box ul {
+    margin-top: 10px;
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.features-box li {
+    margin-bottom: 8px;
+}
+.features-box a {
+    color: #66baff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="style.css">
-    <cscript defer src="search.js"></script>
+    <script defer src="search.js"></script>
 </head>
 <body>
 
@@ -35,8 +35,35 @@
     <div><p>
         “A helpful health guide that lets you search symptoms, medical for disease understand treatments, and learn easy tips for a healthier lifestyle.”
     </P></div>
+<div class="search-container">
+    <input 
+        type="text" 
+        id="symptomSearch" 
+        placeholder="Search symptoms and diseases..."
+        autocomplete="off"
+    >
 
-      
+    <ul id="suggestions" class="suggestions-list"></ul>
+</div>
+
+<div class="box-container">
+    
+
+    <div class="glow-box" onclick="location.href='http://127.0.0.1:5500/VITAMINS.html'">
+        VITAMINS
+    </div>
+
+    <div class="glow-box" onclick="location.href='http://127.0.0.1:5500/dite.html'">
+        HYDRATION & DIET
+    </div>
+
+    <div class="glow-box" onclick="location.href='http://127.0.0.1:5500/Exercise%20tips.html'">
+        EXERCISE TIPS
+    </div>
+
+    <div class="glow-box" onclick="location.href='http://127.0.0.1:5500/mental%20state.html'">
+       TIPS FOR BALANCE MENTAL STATE </div>
+    </div>
   </section>
 </body>
 </html>
